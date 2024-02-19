@@ -36,8 +36,8 @@ main.py --data-type `<type>` --data-path `<path>` --model
 - `--mode`: Specify the mode, 'offline' or 'online'
 
 
-instructions on how to use a certain program. The program is run using
-main.py and requires several arguments to function correctly.
+## Running Instructions:
+The program is run using main.py and requires several arguments to function correctly.
 
 Here is a breakdown of the arguments:
 
@@ -47,25 +47,21 @@ are working with. It can either be 'text' or 'audio'.
 `--data-path` This argument is used to specify the path to the text file
 or audio directory/file that you want to use.
 
-`--model` This argument is used to specify the model for language
-detection. If you are working with text, you can choose between
-'gpt3.5', 'gpt4', and 'llama2'. If you are working with audio, you can
-choose between 'google_asr' and 'whisper'.
+`--model` This argument is used to specify the model for language detection.
+- If you are working with text, you can choose between 'gpt3.5', 'gpt4', and 'llama2'.
+- If you are working with audio, you can choose between 'google_asr' and 'whisper'.
 
 `--mode` This argument is used to specify the mode in which you want to
 operate. It can either be 'offline' or 'online'.
 
-For example, if you have a text file located at
-/home/user/documents/text.txt and you want to use the 'llama2' model in
-'offline' mode, you would run the following command:
+For example, if you have a text file located at /home/user/documents/text.txt and you want to use the 'llama2' model in 'offline' mode, you would run the following command:
 
-For text: main.py --data-type text --data-path
-/home/user/documents/text.txt --model llama2 --mode offline
+For text: 
+main.py --data-type text --data-path /home/user/documents/text.txt --model llama2 --mode offline
 
-For audio: main.py --data-type audio --data-path
-/home/user/documents/audio_samples --model whisper --mode offline
-main.py --data-type audio --data-path /home/user/documents/audio_samples
---model google_ars --mode online
+For audio: 
+main.py --data-type audio --data-path /home/user/documents/audio_samples --model whisper --mode offline
+main.py --data-type audio --data-path /home/user/documents/audio_samples --model google_ars --mode online
 
 Before running the script, set the API Key environment variables,
 preferably in .rc files of your choice, based on the online models
