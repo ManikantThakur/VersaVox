@@ -1,0 +1,7 @@
+{
+    "ollama": {
+        "api_url": "http://localhost:11434/api/generate",
+        "max_retries": 3,
+        "timeout_seconds": 10
+    }
+}
