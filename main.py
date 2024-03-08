@@ -10,6 +10,10 @@ import langid
 from docopt import docopt
 from google.cloud import speech_v1p1beta1 as speech
 
+
+import traceback
+
+
 from models.audio.google_asr import GoogleASRModel
 from models.audio.openai_whisper_offline import OpenaiWhisperModelOffline
 from models.audio.openai_whisper_online import OpenaiWhisperModelOnline
@@ -97,6 +101,7 @@ def detect_llama2_language(text):
             return None
     except Exception as e:
         # print(result)
+        traceback.print_exc()
         print(f"Error in detect_llama2_language: {e}")
 
         return None
